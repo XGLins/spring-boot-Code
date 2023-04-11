@@ -1,0 +1,33 @@
+#??????
+server:
+  port: 8088
+
+#??
+user:
+  name: zhangsan
+  age: 20
+  happy: false
+  birthday: 2023/04/03
+  map:
+    - {k1: v1, k2: v2}
+  list:
+    - code
+    - music
+    - playgames
+
+#??
+hobby:
+  - code
+  - study
+  - readbook
+  - playgames
+
+#???????
+url:
+  orderUrl: http://localhost:3000
+
+#???????????
+spring:
+  profiles:
+#    active: dev
+    active: prd
