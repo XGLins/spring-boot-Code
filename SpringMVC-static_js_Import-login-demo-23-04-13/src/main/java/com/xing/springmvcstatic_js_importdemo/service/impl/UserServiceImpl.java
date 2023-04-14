@@ -20,8 +20,8 @@ public class UserServiceImpl implements UserService {
 
     //重写通过用户姓名查询信息方法
     @Override
-    public User getUserByNameAndPassword(String username, String password) {
-        return userMapper.getUserByNameAndPassword(username, password);
+    public User getUserByNameAndPassword(String username) {
+        return userMapper.getUserByNameAndPassword(username);
     }
 
     //查询所有用户信息

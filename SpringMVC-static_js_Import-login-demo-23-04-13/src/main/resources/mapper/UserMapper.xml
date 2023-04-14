@@ -13,9 +13,9 @@
         2.mapper接口中的方法的方法名要和映射文件中的sql的id保持一致
     -->
 
-    <!--//根据姓名去查询用户 User getUserByNameAndPassword(String username , String password);-->
+    <!--//根据姓名去查询用户 User getUserByNameAndPassword(String username);-->
     <select id="getUserByNameAndPassword" resultType="com.xing.springmvcstatic_js_importdemo.entity.User" parameterType="String">
-        select * from user where username = '${username}' and password = '${password}'
+        select * from user where username = '${username}'
     </select>
 
     <!--//查询所有用户List<User> getAllUser();-->

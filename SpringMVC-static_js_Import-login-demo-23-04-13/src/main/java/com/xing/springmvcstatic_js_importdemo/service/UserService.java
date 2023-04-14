@@ -7,7 +7,7 @@ import java.util.List;
 public interface UserService {
 
     //根据姓名去查询用户
-    User getUserByNameAndPassword(String username , String password);
+    User getUserByNameAndPassword(String username);
 
     //查询所有用户
     List<User> getAllUser();

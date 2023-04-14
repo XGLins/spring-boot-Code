@@ -40,7 +40,7 @@ public class LoginController {
     public User login2(@RequestBody User user) {
 
         //判断当前用户是否存在
-        User user1 = userService.getUserByNameAndPassword(user.getUsername(), user.getPassword());
+        User user1 = userService.getUserByNameAndPassword(user.getUsername());
         System.out.println("我是对象查出来的user1："+user1);
         System.out.println("我是浏览器输入的name：" + user.getUsername());
         System.out.println("我是浏览器输入的password：" + user.getPassword());
